@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Movie Age Limits" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Niko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favf/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favf/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favf/favicon-16x16.png" />
+    <link rel="manifest" href="./favf/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Movie Age Limits</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <!-- references javascript file -->
+    <script src="./js/script.js"></script>
+    <h1>Movie Age Limits</h1>
+    <img src="./images/orange.jpg" alt="orange" width="600" height="300" />
+    <h3>Enter your age:</h3>
+    <p>
+      <!-- form to get user input for their age -->
+      <form action="javascript: discountService()">
+        <label for="age">Enter your Age:</label>
+        <input type="number" id="age" placeholder="age" /><br><br>
+        <label for="fishs">Day of The Week:</label>
+          <select name="day" id="day">
+            <option>-- Day of the Week --</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednseday">Wednseday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+      </form>
+    </p>
+		<!-- Create a space where the user information will be displayed -->
+    <div id="user-info"></div>
+ 
+    <br>
   </body>
 </html>
