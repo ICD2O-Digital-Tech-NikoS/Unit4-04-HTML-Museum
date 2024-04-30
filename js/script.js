@@ -5,28 +5,30 @@
 
 "use strict"
 //function to see what rating of movies user can watch
-function discountService() {
+function museumAdmission() {
 
   // get user input and declare it as a variable for their age
   let userAge = document.getElementById("age").value;
+  let day = document.getElementById("day").value;
+  let unchanged = document.getElementById("option1").value;
   
-
-  // Check if user input is empty
-  if (userAge) || (select == 0) {
-    document.getElementById("user-info").innerHTML = "Please fill out both questions";
-    return;
-
-  let select = document.getElementById("day").value;
-  let day = select.options[select.selectedIndex].value;
-
-  if (day == "Tuesday") || (day == "Thursday") {
-    document.getElementById("user-info").innerHTML = "You are elegible for a discount"
+  if (userAge < 5 || userAge > 95) {
+      document.getElementById("user-info").innerHTML = "You can get in for FREE.";
   }
-  else if (userAge >= 12) && (userAge <= 21) {
-    document.getElementById("user-info").innerHTML = "You are elegible for a discount"
+  else if (userAge >= 12 && userAge <= 21) {
+    document.getElementById("user-info").innerHTML = "You are elegible for a discount.";
+  }
+  else if (day == "Tuesday" || day == "Thursday") {
+    document.getElementById("user-info").innerHTML = "You are elegible for a discount.";
   }
   else {
-    document.getElementById("userinfo ")
+    document.getElementById("user-info").innerHTML = "You are not elegible for a discount and must pay full price.";
+  }
+
+  // Check if user input is empty
+  if (userAge === "" || day === unchanged) {
+    document.getElementById("user-info").innerHTML = "Please fill out both questions.";
+    return;
   }
 
 }

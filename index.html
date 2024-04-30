@@ -21,12 +21,12 @@
     <h3>Enter your age:</h3>
     <p>
       <!-- form to get user input for their age -->
-      <form action="javascript: discountService()">
+      <form action="javascript: museumAdmission()">
         <label for="age">Enter your Age:</label>
-        <input type="number" id="age" placeholder="age" /><br><br>
+        <input type="number" id="age" min="0" step="1" placeholder="age" /><br><br>
         <label for="fishs">Day of The Week:</label>
           <select name="day" id="day">
-            <option>-- Day of the Week --</option>
+            <option id="option1">-- Day of the Week --</option>
             <option value="Monday">Monday</option>
             <option value="Tuesday">Tuesday</option>
             <option value="Wednseday">Wednseday</option>
@@ -35,6 +35,7 @@
             <option value="Saturday">Saturday</option>
             <option value="Sunday">Sunday</option>
           </select>
+        <input type="submit" value="Check" />
       </form>
     </p>
 		<!-- Create a space where the user information will be displayed -->
