@@ -11,7 +11,8 @@ function museumAdmission() {
   let userAge = document.getElementById("age").value;
   let day = document.getElementById("day").value;
   let unchanged = document.getElementById("option1").value;
-  
+
+  // Check if user age falls in specific ranges for discounts or free entry
   if (userAge < 5 || userAge > 95) {
       document.getElementById("user-info").innerHTML = "You can get in for FREE.";
   }
